@@ -237,7 +237,7 @@ async function get_stats() {
             let fourcat_button = createElement("button", {
                 "data-platform": platform,
                 "class": "upload-to-4cat",
-            }, "to FeedFreak");
+            }, "To ClearFeed");
 
             actions.appendChild(clear_button);
             actions.appendChild(download_button);
@@ -362,7 +362,7 @@ async function button_handler(event) {
     
         } catch (err) {
             console.error('ClearFeed upload error:', err);
-            status.innerText = 'Upload failed. Check the console for details.';
+            status.innerText = 'Upload failed. Please try again.';
         }
 
         is_uploading = false;
@@ -652,6 +652,7 @@ function fastForward(lastRow, idProp, otherCriteria) {
 /**
  * Init!
  */
+
 document.addEventListener('DOMContentLoaded', async function () {
     get_stats();
     setInterval(get_stats, 1000);
@@ -664,7 +665,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     const current_version = version_container.innerText;
     const known_version = await background.browser.storage.local.get('zs-version');
     if(!known_version || current_version !== known_version['zs-version']) {
-        const version_alert = createElement('span', {'class': 'popup new-version'}, 'Zeeschuimer has been updated to a new version! You can read the release notes via this link.');
         const ok_button = createElement('button', {'class': 'close-popup'}, 'OK');
         ok_button.addEventListener('click', async function(e) {
             await background.browser.storage.local.set({'zs-version': current_version});
