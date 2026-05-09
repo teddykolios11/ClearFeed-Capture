@@ -76,7 +76,7 @@ window.zeeschuimer = {
                     enabled.push(module);
                 }
             }
-            let path = enabled.length > 0 ? 'images/zeeschuimer-icon-active.png' : 'images/zeeschuimer-icon-inactive.png';
+            let path = enabled.length > 0 ? 'images/clearfeed_capture.png' : 'images/clearfeed_capture.png';
             browser.browserAction.setIcon({path: path})
         }, 500);
     },

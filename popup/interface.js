@@ -162,7 +162,7 @@ async function toggle_listening(e) {
  */
 function update_icon() {
     const any_enabled = Array.from(document.querySelectorAll('.toggle-switch input')).filter(item => item.checked);
-    const path = any_enabled.length > 0 ? '/images/zeeschuimer-icon-active.png' : '/images/zeeschuimer-icon-inactive.png';
+    const path = any_enabled.length > 0 ? '/images/clearfeed_capture.png' : '/images/clearfeed_capture.png';
     document.querySelector('link[rel~=icon]').setAttribute('href', path);
 }
 
