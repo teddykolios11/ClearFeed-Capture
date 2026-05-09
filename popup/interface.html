@@ -10,11 +10,11 @@
     <script src="../js/streamsaver-2.0.3.js"></script>-->
     <style>
         :root {
-            --neutral: #d9c398;
-            --neutral-contrast: #3C3C3B;
-            --neutral-contrast-alt: #5d6c4c;
-            --accent-alt: #b45d3d;
-            --accent: #e0ba5f;
+            --neutral: #ffffff;
+            --neutral-contrast: #233849;
+            --neutral-contrast-alt: #01A9F6;
+            --accent-alt: #233849;
+            --accent: #e8f6fe;
         }
 
         *[aria-hidden=true] {
@@ -72,7 +72,8 @@
             font-style: italic;
             src: url("../fonts/LobsterTwo-BoldItalic.ttf")
         }
-
+        
+        
         html {
             background: #FFF;
             margin: 0;
@@ -80,6 +81,27 @@
             height: 100%;
             background: url('../images/background.png');
             background-attachment: fixed;
+        }
+
+        html {
+            background: linear-gradient(
+                180deg,
+                #ffffff 0%,
+                #e8f6fe 8%,
+                #b8dff5 18%,
+                #01A9F6 28%,
+                #1a7a8a 35%,
+                #2a5a4a 42%,
+                #4a8a6a 50%,
+                #2a5a4a 58%,
+                #1a7a8a 65%,
+                #01A9F6 72%,
+                #b8dff5 82%,
+                #e8f6fe 92%,
+                #ffffff 100%
+            );
+            background-attachment: fixed;
+            min-height: 100vh;
         }
 
         body {
@@ -113,6 +135,7 @@
 
         h2 {
             font-size: 1.5em;
+            color: var(--neutral-contrast);
         }
 
         header {
@@ -120,8 +143,8 @@
             margin-bottom: 0.5em;
             padding: 0.25em;
             background: var(--neutral-contrast);
-            color: var(--neutral);
-            background-image: url('../images/chirico.png');
+            color: #ffffff;
+            background-image: url('../images/clearfeed_capture.png');
             background-repeat: no-repeat;
             background-position-x: 0;
             background-position-y: 0;
@@ -137,6 +160,7 @@
         h1 {
             text-indent: 1.75em;
             margin: 0;
+            color: #ffffff;
         }
 
         .version {
@@ -376,7 +400,7 @@
             to { background-position-x: 75px; }
         }
     </style>
-    <link rel="shortcut icon" href="/images/zeeschuimer-96.png">
+    <link rel="shortcut icon" href="/images/ClearFeed Logo.png">
 </head>
 <body>
 <article>
@@ -432,12 +456,8 @@
 <footer>
     <nav>
         <ul>
-            <li><a href="https://tools.digitalmethods.net">DMI Tools</a></li>
-            <li><a href="https://www.github.com/digitalmethodsinitiative/zeeschuimer">GitHub</a></li>
-            <li><a href="https://4cat.nl">4CAT</a></li>
-            <li><a href="https://cat4smr.humanities.uva.nl">CAT4SMR</a></li>
-            <li><a href="https://doi.org/10.5281/zenodo.6826877">Cite/DOI</a></li>
-            <li><a href="#" id="toggle-advanced-mode">Show advanced options</a></li>
+            <li><a href="https://github.com/teddykolios11/capp-zeeschuimer">ClearFeed Capture GitHub</a></li>
+            <li><a href="https://github.com/uchicago-capp-30320/ClearFeed">ClearFeed GitHub</a></li>
         </ul>
     </nav>
 </footer>
