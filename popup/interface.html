@@ -11,10 +11,10 @@
     <style>
         :root {
             --neutral: #ffffff;
-            --neutral-contrast: #233849;
-            --neutral-contrast-alt: #01A9F6;
-            --accent-alt: #233849;
-            --accent: #e8f6fe;
+            --neutral-contrast: #213847;
+            --neutral-contrast-alt: #009eed;
+            --accent-alt: #213847;
+            --accent: #e8f6fd;
         }
 
         *[aria-hidden=true] {
@@ -77,17 +77,17 @@
             background: linear-gradient(
                 180deg,
                 #ffffff 0%,
-                #e8f6fe 8%,
+                #e8f6fd 8%,
                 #b8dff5 18%,
-                #01A9F6 28%,
-                #1a7a8a 35%,
-                #2a5a4a 42%,
-                #4a8a6a 50%,
-                #2a5a4a 58%,
-                #1a7a8a 65%,
-                #01A9F6 72%,
+                #009eed 28%,
+                #0077bb 35%,
+                #213847 42%,
+                #1a2f3d 50%,
+                #213847 58%,
+                #0077bb 65%,
+                #009eed 72%,
                 #b8dff5 82%,
-                #e8f6fe 92%,
+                #e8f6fd 92%,
                 #ffffff 100%
             );
             background-attachment: fixed;
@@ -117,21 +117,22 @@
         }
 
         h1, h2 {
-            font-size: 3em;
-            font-family: 'Lobster Two', serif;
-            font-style: italic;
+            font-size: 2em;
+            font-family: Helvetica, serif;
+            font-style: normal;
             font-weight: bold;
         }
 
         h2 {
-            font-size: 1.5em;
+            font-size: 1.05em;
             color: var(--neutral-contrast);
+            font-style: italic;
         }
 
         header {
             margin-top: 0;
             margin-bottom: 0.5em;
-            padding: 0.25em;
+            padding: 0.75em 1.5em;
             background: var(--neutral-contrast);
             color: #ffffff;
             background-image: url('../images/clearfeed_capture.png');
@@ -148,7 +149,7 @@
         }
 
         h1 {
-            text-indent: 1.75em;
+            text-indent: 1.5em;
             margin: 0;
             color: #ffffff;
         }
@@ -238,7 +239,7 @@
             color: var(--accent);
             border: 2px solid var(--neutral-contrast);
             border-radius: 0.5em;
-            padding: 0.25em 0.5em;
+            padding: 0.25em;
         }
 
         input:not([type=checkbox]):not([type=radio]):disabled, button:disabled {
@@ -392,23 +393,24 @@
     </style>
     <link rel="shortcut icon" href="/images/clearfeed_capture.png">
 </head>
-<body>'
+<body>
 <article>
     <header>
         <h1>ClearFeed Capture</h1>
-        <span class="version"><a href="https://github.com/teddykolios11/capp-zeeschuimer">v1.1</a></span>
+        <span class="version"><a href="https://github.com/teddykolios11/ClearFeed-Capture">v.1.1.4</a></span>
     </header>
-   <section id="status">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin: 0 1em;">
-        <h2><span>Captured data objects</span></h2>
+   <section id="status" style="position: relative;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin: 0.25em 4em;">
+        <h2 style="margin-right: auto; margin-top: 1.1em;"><span>Captured data objects</span></h2>
         <div style="
+            position: absolute;
+            right: 2.75em;
+            top: 0.5em;
             background: #e8f6fe;
             border: 1px solid #01A9F6;
             border-radius: 6px;
             padding: 3px 18px;
-            margin-top: 0.5em;
-            width: 200px;
-            flex-shrink: 0;
+            width: 160px;
             font-size: 0.75em;
             color: #233849;
             text-align: center;
